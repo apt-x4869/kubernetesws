@@ -1,0 +1,57 @@
+cd deployment/
+kubectl create -f pod.yaml 
+clear
+kubectl create -f pod.yaml 
+clear
+7480  kubectl create -f pod.yaml 
+kubectl get pods
+kibectl apply -f pod.yaml 
+kubectl apply -f pod.yaml 
+kubectl get pods
+kubectl delete pod nginx
+kubectl get pods
+
+kubectl create -f replicaset.yaml 
+kubectl get pods
+kubectl get replicasets
+kubectl delete pod myreplicaset-spgfg
+kubectl delete replicaset myreplicaset
+
+
+
+
+kubectl create -f deployment.yaml 
+kubectl get pods
+kubectl get replicasets
+kubectl get deployments
+kubectl get rs
+kubectl get deploy
+kubectl delete deploy mydeployment
+kubectl get pods
+
+
+cd ..
+cd challenge2/
+kubectl create -f deploymentchallenge.yaml 
+kubectl get pods
+kubectl get rs
+kubectl get deploy
+kubectl delete deploy challenge
+
+
+
+
+
+cd multi/
+kubectl create -f deployment.yaml 
+kubectl describe pod mydeployment-568ccf44f6-h4n2d
+kubectl get pods
+kubectl exec -it mydeployment-568ccf44f6-h4n2d -c server -- /bin/bash
+
+apt-get update
+apt-get install curl
+curl localhost:80
+exit
+
+kubectl get deploy
+kubectl delete deploy mydeployment
